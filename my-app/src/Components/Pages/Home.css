@@ -1,0 +1,4 @@
+.centerImage {
+    background: url('../../assets/book-pages.png') center;
+    background-size: cover;
+}

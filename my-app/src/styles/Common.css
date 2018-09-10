@@ -1,0 +1,19 @@
+.flexContainer {
+    display: flex;         
+  }
+.flexItem {
+  flex: 1;
+}
+.flexStart {
+  justify-content: flex-start;
+}
+.flexEnd {
+  justify-content: flex-end;
+}
+
+.itemCenter {
+    align-items: center;
+}
+.fullHeight {
+    height: 100vh;
+}

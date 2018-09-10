@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 //import { browserHistory } from 'react-router';
 //import logo from '../assets/logo.svg';
 import './App.css';
@@ -14,20 +14,13 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
-          <Route exact path="/" component={Home} />          
-          <Route path="/contact-us" component={ContactUs} />
+          <Switch>
+            <Route exact path="/" component={Home} />          
+            <Route path="/contact-us" component={ContactUs} />
+          </Switch>
           <Footer />          
         </div>
       </Router>
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <h1 className="App-title">Welcome to React</h1>
-      //   </header>
-      //   <p className="App-intro">
-      //     To get started, edit <code>src/App.js</code> and save to reload.
-      //   </p>
-      // </div>
     );
   }
 }
